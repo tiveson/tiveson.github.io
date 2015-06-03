@@ -1,0 +1,41 @@
+body{
+	text-align: center;
+	background: url("http://static.guim.co.uk/sys-images/Guardian/About/General/2010/10/27/1288162605076/Housing-in-north-London-006.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: helvetica;
+	color: #000000;
+	}
+h1{
+color: #FF802E;
+font-size: 28px;
+font-weight: bold;
+padding: 20px;
+}
+h2{
+	font-size: 22px;
+}
+#slogan{
+font-style: italic;
+color: #E83B1E;
+}
+p{
+	font-size: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+
+}
+ul{
+padding: 20px;
+padding-left: 610px;
+}
+li{
+font-size: 20px;
+text-align: left;
+}
+a{
+	color: red;
+	font-size: 22px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}

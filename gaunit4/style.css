@@ -1,0 +1,81 @@
+body{
+    /* I had trouble getting the background image to be a relative link got it sorted though */
+	text-align: center;
+	background: url("../gaunit4/images/londonhouses.jpg"), no-repeat;
+	/*background: url("http://static.guim.co.uk/sys-images/Guardian/About/General/2010/10/27/1288162605076/Housing-in-north-London-006.jpg");
+	background-repeat: no-repeat;*/
+	background-size: cover;*/
+	color: #000000;
+	}
+	
+
+h1{
+	color: #000000;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: 'Ariel', sans-serif;
+	padding: 20px;
+	}
+
+
+h2{
+	font-size: 26px;
+	font-family: 'Ariel', sans-serif;
+}
+
+#slogan{
+	font-style: italic;
+	font-size: 26px;
+	font-weight: 600;
+	color: #000000;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: auto;
+	text-align: center;
+	}
+
+/*For some reason the text in the <p> section is spreading */
+p{
+	font-size: 18px; 
+	font-family: "Times New Roman", Times, serif;
+	width:600;
+	text-align: left;
+	margin: auto;
+
+}
+/*I can't seem to figure out how to allign the list in the center so that it stays center when resizing the screen*/
+ul{
+	padding: 20px;
+	/*padding-left: 610px;*/
+	/*margin-left:auto;
+	margin-right: auto;*/
+}
+
+li{
+	font-size: 20px;
+	text-align: left;
+	margin-left: auto
+	margin-right: auto;
+}
+
+ #moreme{
+ 	color: #ffffff;
+ }
+ 
+ input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+    }
+
+    input[type="submit"] {
+      background: red;
+      color: white;
+    }
+
+/*I couldn't get the 'contact me' to stand out and so borrowed the input device a{
+	color: blue;
+	font-size: 22px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}*/

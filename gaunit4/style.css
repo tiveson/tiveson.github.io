@@ -43,19 +43,23 @@ p{
 	margin: auto;
 
 }
-/*I can't seem to figure out how to allign the list in the center so that it stays center when resizing the screen*/
+
+div{
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+}
+/*I can't seem to figure out how to allign the list in the center so that it stays center when re-sizing the screen. 
+Since even adding the <div> hasn't helped I have decided to remove the bullets*/
 ul{
 	padding: 20px;
-	/*padding-left: 610px;*/
-	/*margin-left:auto;
-	margin-right: auto;*/
+	/*display: inline-block;*/
+	padding-bottom: 50px;
+	list-style-type: none;
 }
 
 li{
 	font-size: 20px;
-	text-align: left;
-	margin-left: auto
-	margin-right: auto;
 }
 
  #moreme{

@@ -42,7 +42,7 @@ h2{
 p{
 	font-size: 18px; 
 	font-family: "Times New Roman", Times, serif;
-	width:600;
+	width:600px;
 	text-align: left;
 	margin: auto;
 
@@ -51,7 +51,7 @@ p{
 div{
 	text-align: left;
 	display: inline-block;
-	vertical-align: middle;
+	/*vertical-align: middle;*/
 }
 /*I can't seem to figure out how to allign the list in the center so that it stays center when re-sizing the screen. 
 Since even adding the <div> hasn't helped I have decided to remove the bullets*/

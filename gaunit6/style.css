@@ -1,43 +1,47 @@
 body{
-	background-color: #ffffff;
-	margin: auto;
+}
+/* 1st layer containing the logo + 5 film festival logos*/
+.topbar {
+    float: left;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    display: inline-block;
 }
 
-.header {
-  float: left;
-  width: 1080px;
-  height: 150px;
-  background-color: #ffffff;
-  margin-left: 55px;
-  padding: 0;
-}
-
-ul{
-	list-style-type: none;
-	display: block;
-
-	
-}
-
-li{
-	margin-bottom: 20px;
-}
 #logo{
-	background: url("../gaunit6/images/unit5tophylogo.png" alt="tophy logo" title="tophy cho logo" );
-	
-	
+	height: 100px;
+	float: left;
+	margin: 0;
+	padding: 0;
 }
 
 #filmfest{
-	background: url("../gaunit6/images/filmfest.png"alt="film festival logo" title="film festival logo");
-	width: 80px;
-	height: 90px;
-	margin:5px 40px 40px 100px;
+	float: right;
+	height: 100px;
+	margin: 0;
+	padding: 0;
 }
+
+
+/* 2nd layer containing navigation and links*/
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	clear: both;
+	content: ""
+	font-size: 0;
+	height: 0;
+	font-size: 0;
+}
+
 nav{
 	background-color: #404040;
 	font-family: helvetica, sans-serif;
 	display: inline-block;
+	width: 100%;
+	margin: 0 auto;
 
 }
 
@@ -53,73 +57,43 @@ a{
 	float: left;
 	margin: 20px 0 20px 0;
 	padding: 10px 105px 10px 105px;
-	width: 150px;
+	width: 230px;
 }
 
-.clearfix:after{
-	visibility: hidden;
-	display: block;
-	clear: both;
-	content: ""
-	font-size: 0;
-	height: 0;
-	font-size: 0;
-}
+/*3rd layer and main picture*/
 
-section{
-	display: inline-block;
-	float: left;
-	
-}
-
-.column{
+#hobo{
 	height: 360px;
-	float: left;
-	padding: 20px;
-	margin: 0;
-	
-}
-
-#column1 {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
 	background-color: #0d0d0d;
-	width: 120px
-}
-
-#column2{
-	background-color: rgb(0,0,0); opacity: .6;
-	width: 720px;
-	background: url("../gaunit6/images/gaunit5home.png");
 	background-size: cover;
 }
 
-#column3{
-	background-color: #0d0d0d;
-	width: 120px;
+img{
+	display: block;
+	margin: 0 auto
 }
-div{
-	display: inline-block;
-	float: left;
-	background-color: #ffffff;
-	width: 1080px;
-	margin: auto;
-}
+
+/*4th layer with the film title*/
 
 #filmname{
-	text-align: center;	
+	text-align: center;
+	display: block;	
 	height: 200px;
-	width: 960px;
-	margin: 20px;
-	padding: 10px;
-	/*float: left;*/
-}
-
+	width: 100%;
+	margin: 0 auto;
+	background-color: #404040;
 }
 
 h1{
-	font-size: 60px;
+	font-size: 70px;
 	font-family: 'VT323', sans-serif;
 	/*font-family: 'Press Start 2P', cursive, sans-serif;*/
 	color: #d9d9d9;
+	margin: 0;
+
 }
 
 h2{
@@ -135,6 +109,7 @@ footer{
       border: 0;
       padding: 10px;
       font-size: 18px;
+      float: right;
     }
 
     input[type="submit"] {

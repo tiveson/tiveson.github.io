@@ -30,8 +30,7 @@ body{
 	visibility: hidden;
 	display: block;
 	clear: both;
-	content: ""
-	font-size: 0;
+	content: "";
 	height: 0;
 	font-size: 0;
 }

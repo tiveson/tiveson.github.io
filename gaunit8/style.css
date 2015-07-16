@@ -1,0 +1,171 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 3.75em;
+    background-color: #C5E5F5; 
+}
+
+nav{
+	background-color: #A3CCF1;
+	font-family: helvetica, sans-serif;
+	text-align: center; 
+	color:#58302C;
+	font-size: 32px;
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+
+nav a:hover{
+	background-color: #C5E5F5;
+	width: 100%;
+
+}
+
+nav a{
+	background-color: #A3CCF1;
+	text-decoration: none;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+}
+
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li{
+	display: block;
+	text-align: center;
+	border-bottom: .1em solid #C5E5F5;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+h1{
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 2em;
+	color: #58302C;
+	padding: 0;
+	margin: 0;
+	}
+
+p{
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+footer{
+	background-color: #D8AD72;
+	height: 2em;
+	width: 100%;
+	text-align: center;
+	padding-top: .5em;
+	color: #000000;
+	margin: 0 auto;
+}
+
+.topbar{
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 2em;
+	color: #58302C;
+	margin: 0 auto;
+	width: 76.667px;
+}
+
+/*.topbar img{
+	margin: 0 auto;
+	width: 76.667px;
+}*/
+
+.container{
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 2em;
+	text-align: center;
+	background-image: cover;
+	background-color: #C5E5F5;
+}
+
+.social{
+	background-color: #76682A;
+	list-style-type: none;
+	float: left;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	font-family: helvetica, sans-serif;
+	color: #58302C;
+}
+
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	clear: both;
+	content: "";
+	height: 0;
+	font-size: 0;
+}
+
+
+@media only screen and (min-width: 660px;){
+	nav{
+			max-width: 660px;
+			margin: 0 auto;
+			float: none;
+			display: block;
+	}
+}
+@media only screen and (min-width: 1280px;){
+	header{
+		max-width: 1280px;
+		margin: auto;
+	}
+
+	nav{
+		max-width: 1280px;
+		margin: 0 auto;
+	}
+
+	li{
+		float: left;
+		width: 25%;
+	}
+	
+	footer{
+		max-width: 1280px;
+		margin: auto;
+	}
+	
+	.container{
+		max-width: 1280px;
+		margin: auto;
+	}
+
+	.social{
+		max-width: 1280px;
+		margin: 0 auto;
+		float: left;
+		display: inline-block;
+	}
+}
+
+@media only screen and (min-width: 660px;){
+	nav{
+			max-width: 660px;
+			margin: 0 auto;
+			float: none;
+			display: block;
+	}
+}

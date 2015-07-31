@@ -19,12 +19,11 @@ nav{
 	margin: 0 auto;
 	padding: 0;
 }
-
 nav a:hover{
 	background-color: #C5E5F5;
 	width: 100%;
-
 }
+
 
 nav a{
 	background-color: #A3CCF1;
@@ -81,37 +80,57 @@ footer{
 }
 
 .topbar{
-	font-family: 'Shadows Into Light', cursive;
-	font-size: 2em;
-	color: #58302C;
+	/*font-family: 'Shadows Into Light', cursive;*/
+	color: #000000;
 	margin: 0 auto;
-	width: 76.667px;
+	/*width: 100%;*/
+}
+
+.topbar ul{
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	width: 33.333%;
+}
+
+.topbar li{
+	float: left;
+	text-align: center;
+	font-family: arial, sans-serif, bold;
+	font-size: 2.5em;
+	width: 50%;
 }
 
 .container{
 	font-family: 'Shadows Into Light', cursive;
-	font-size: 2em;
+	font-size: 2.5em;
+	color: #58302C;
 	text-align: center;
-	background-image: cover;
+	padding-top: .5em;
 	background-color: #C5E5F5;
 }
 
 .social{
 	background-color: #76682A;
 	list-style-type: none;
-	float: left;
-	display: block;
-	margin: 0 auto;
+	padding-top: 0.5em;
 	width: 100%;
 	font-family: helvetica, sans-serif;
 	color: #58302C;
+}
+
+.social ul{
+	list-style-type: none;
+	width: 640px;
+	margin: 0 auto;
+	padding: 0;
 }
 .social li{
 	float: left;
 	text-align: center;
 	margin: 0;
 	padding: 0;
-	/*width: 25%;*/
+	width: 25%;
 }
 
 .clearfix:after{
@@ -123,8 +142,17 @@ footer{
 	font-size: 0;
 }
 
+@media only screen and (min-width:661px){
+	nav li{
+		border-bottom: none;
+	}
+}
 
 @media only screen and (max-width: 660px){
+
+	header{
+		height: 98px;
+	}
 	nav ul{
 			width: 100%;
 	}
@@ -140,7 +168,13 @@ footer{
 		width: 100%;
 	}
 	.social li{
+		float: left;
+		/*width: 100%;*/
+	}
+
+	.topbar li{
 		float: none;
+		text-align: center;
 		width: 100%;
 	}
 }
@@ -155,7 +189,7 @@ footer{
 		margin: 0 auto;
 	}
 
-	li{
+	nav li{
 		float: left;
 		width: 25%;
 		border-bottom: none;
@@ -173,18 +207,8 @@ footer{
 
 	.social{
 		max-width: 1280px;
-		margin: 0 auto;
-		/*float: left;
-		display: inline-block;*/
+		margin: auto;
+		
 	}
 }
 
-/*@media only screen and (min-width: 660px;){
-	nav{
-			max-width: 660px;
-			margin: 0 auto;
-			float: none;
-			display: block;
-	}
-}
-*/

@@ -1,17 +1,21 @@
+
+
 body{
-    /* I had trouble getting the background image to be a relative link got it sorted though */
-	text-align: center;
 	background: url("../gaunit4/images/londonhouses.jpg"), no-repeat;
-	/*background: url("http://static.guim.co.uk/sys-images/Guardian/About/General/2010/10/27/1288162605076/Housing-in-north-London-006.jpg");
-	background-repeat: no-repeat;*/
-	background-size: cover;*/
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	text-align: center;
 	color: #000000;
+	font-size: 36px;
+	font-weight: bold;
+	font-family: 'Oswald', sans-serif;
+	padding: 20px;
 	}
 	
-#wrapper {
-	background-color: rgba(0,0,0,.2);
-	padding: 20px;
-}
 
 h1{
 	color: #000000;
@@ -21,13 +25,133 @@ h1{
 	padding: 20px;
 	}
 
-
 h2{
-	font-size: 26px;
-	font-family: 'Ariel', sans-serif;
+	font-family: 'Oswald', sans-serif;
+	font-size: 3rem;
+	text-align: center;
+	padding-top: 100px;
+	margin: 0 0 30px 0;
 }
 
-#slogan{
+h3{
+	font-family: 'Oswald', sans-serif;
+}
+h4{
+	font-size: 2em;
+	font-family: 'Oswald', sans-serif;
+	color: #adb8be;
+	background-color: #2e3541;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: .2em;
+	padding-bottom: .2em;
+}
+
+section p{
+	font-size: 18px; 
+	font-family: "Times New Roman", Times, serif;
+	color: #adb8be;
+	width:50%;
+	text-align: left;
+	padding-bottom: 2em;
+	margin: 0 auto;
+}
+
+/* Peekaboo Nav Bar with some adaptations
+
+Created by Jenny Veens,
+Find me on Twitter @jennyveens
+
+Props to @WesBos for his help :) */
+
+nav {
+	padding: 0;
+	margin: 0;
+	width: 55%;
+	float: right;
+}
+
+
+nav ul {
+	float: right;
+	display: inline-block;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+nav ul li {
+	float: left;
+	margin: 0;
+	display: inline;
+	width: 25%;
+	text-align: center;
+	background: rgba(0,0,0,0.7);
+}
+
+nav ul li:hover {
+	background: none;
+  	font-style: bold;
+}
+
+nav ul li a {
+	text-decoration: none;
+	padding: 25px 20px;
+	color: #fff;
+	margin: 0;
+	display: inline-block;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1rem;
+}
+
+nav ul li a:focus {
+	outline: none;
+}
+
+input {
+ 	  float: right;
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+      margin: 0 auto;
+    }
+
+    input[type="submit"] {
+      background: red;
+      color: white;
+    }
+
+footer{
+	background-color: #000000;
+	display: block;
+	height: 3em;
+	width: 100%;
+	text-align: center;
+	padding-top: .5em;
+	color: #ffffff;
+	margin-top: 2em;
+}
+footer small{
+	float:left;
+	padding-top: 1em;
+	padding-left: 3em;
+}
+
+#wrapper {
+	background-color: rgba(0,0,0,.2);
+}
+
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	clear: both;
+	content: "";
+	height: 0;
+	font-size: 0;
+}
+
+.slogan{
 	font-style: italic;
 	font-size: 26px;
 	font-weight: 600;
@@ -38,53 +162,85 @@ h2{
 	text-align: center;
 	}
 
-/*For some reason the text in the <p> section is spreading */
-p{
-	font-size: 18px; 
-	font-family: "Times New Roman", Times, serif;
-	width:600px;
+.navigate{
+	margin: 0 auto;
+}
+
+.offerings {
+	padding: 20px 1px 15px 133px;
+	margin: 0 auto;
+	float: left;
+	color: #fff;
+	width: 35%;
+	background: rgba(0,0,0,0.7);
+	font-family: 'Oswald', sans-serif;
+  	font-weight: 400;
+	font-size: 1.8rem;
 	text-align: left;
-	margin: auto;
-
+  	font-variant: small-caps;
 }
 
-div{
-	text-align: left;
-	display: inline-block;
-	/*vertical-align: middle;*/
-}
-/*I can't seem to figure out how to allign the list in the center so that it stays center when re-sizing the screen. 
-Since even adding the <div> hasn't helped I have decided to remove the bullets*/
-ul{
-	padding: 20px;
-	/*display: inline-block;*/
-	padding-bottom: 50px;
-	list-style-type: none;
+@media only screen and (max-width: 320px){
+	footer small{
+		float: none;
+		text-align: center;
+	}
 }
 
-li{
-	font-size: 20px;
+@media only screen and (max-width:900px) {
+  .offerings{
+    width: 100%;
+    text-align: center;
+    padding-top: 25px; 
+    padding-bottom: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    float: none;
+  }
+  
+ .navigate {
+    width: 100%;
+  }
+  
+   nav ul {
+    border: none;
+  }
+  
+   nav ul li a {
+    padding: 25px 2%;
+  }
+
+	section p{
+		width:60%;
+	}
 }
 
- #moreme{
- 	color: #ffffff;
- }
- 
- input {
-      border: 0;
-      padding: 10px;
-      font-size: 18px;
-    }
+@media only screen and (min-width: 1280px){
+	
+	body{
+		max-width: 1280px
+		margin: auto;
+	}
 
-    input[type="submit"] {
-      background: red;
-      color: white;
-    }
+	nav{
+		max-width: 1280px;
+		margin: auto;
+	}
 
-/*I couldn't get the 'contact me' to stand out and so borrowed the input device a{
-	color: blue;
-	font-size: 22px;
-	padding-top: 50px;
-	padding-bottom: 50px;
-}*/
+	section p{
+		max-width: 1280px;
+		margin: 0 auto;
+	}
 
+	h3{
+		max-width: 1280px;
+		margin: 0 auto
+	}
+	
+	footer{
+		max-width: 1280px;
+		margin: auto;
+	}
+	
+
+}

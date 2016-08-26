@@ -1,0 +1,328 @@
+		*{
+			box-sizing: border-box;
+		}
+		
+		body
+		{
+			max-width:62.5em;
+			margin: auto;
+			padding: 0;
+			
+		}
+
+		h1{
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 700;
+			font-size: 1.8em;
+			text-transform: capitalize;
+			margin: 0;
+			padding: 0;
+		}
+
+		h2{
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 700;
+			text-transform: capitalize;
+			text-align: left;
+		}
+
+		h3{
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 400;
+			font-size: 1.2em;
+			line-height: 1.2;
+			letter-spacing: 1.2px;
+			color: #f2f2f2;
+			text-align: right;
+			float: right;
+			background-color: rgba(0,0,0,.5);
+    		box-shadow: 0 0 10px rgba(0,0,0,.1);
+    		width: 50%;
+    		margin-top: 150px;
+		}
+		img{
+			height: auto;
+			width: 100%;
+		}
+
+		section {
+			background-image: url("images/techworld.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 387px;
+		}
+/* this is the home page style section*/
+		article {
+			font-family: 'Open Sans', sans-serif;
+			display: block;
+			float: left;
+			font-weight: 400;
+			text-align: justify;
+			width:60%;
+			padding-right: 1em;
+			margin: 0;	
+		}
+		aside{
+			font-family: 'Open Sans', sans-serif;
+			text-align: justify;
+			display: block;
+			float: right;
+			font-size: 1em;
+			background-color: #4b9cef;
+			width: 25%;
+			height: 100%;
+			padding-left: 1em; 
+			padding-right: 1em;
+			margin: 0;
+		}
+
+
+		footer {
+			font-family: 'Open Sans', sans-serif;
+			color: #f2f2f2;
+			background-color: #4b9cef;
+			width: 100%;
+			height: 6em;
+		}
+
+		footer ul{
+			display: block;
+			text-decoration: none;
+		}
+
+		footer li{
+			font-size: 14px;
+			text-transform: uppercase;
+			list-style-type: none;
+			float: right;
+		}
+		
+		.clearfix:after{
+			visibility: hidden;
+			display: block;
+			clear: both;
+			content: "";
+			height: 0;
+			font-size: 0;
+		}
+
+		.container{
+			padding-right: 15px;
+			padding-left: 15px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+/* This is the top of each page */
+		.header{
+			height: 144px;
+			width: 100%;
+			padding: 0; 
+			margin:0 auto;
+		}
+
+		.logo {
+			margin: 0;
+			height: 100%;
+			float: left;
+		}
+
+		.slogan  {
+			font-family: 'Open Sans', sans-serif;
+			font-style: italic;
+			font-weight: 700;
+			color: #05345e;
+			float: right;
+			padding-top: 52px;
+		}
+		
+	
+/*This is the navigation bar that is on every page */
+/* For the bar on large screens*/
+#nav {
+			width: 100%; 
+			font-family: 'Open Sans', sans-serif;
+			color: white;
+			background-color: #4b9cef;
+			font-weight: 400;
+			top: 0%;
+			left: 50%;
+			margin: auto; 
+			}
+
+		#navbar > a
+			{
+				display: none;
+				text-decoration: none;
+			}
+
+		#navbar li
+			{
+				position: relative;
+			}
+		#navbar li a
+			{
+				color: black;
+				display: block;
+			}
+		#navbar li a:active
+			{
+				background-color: #05345e !important;
+			}
+
+			#navbar span:after
+			{
+				width: 0;
+				height: 0;
+				border: 0.313em solid transparent; 
+				border-bottom: none;
+				border-top-color: #1f5d8e;
+				content: '';
+				vertical-align: middle;
+				display: inline-block;
+				position: relative;
+				right: -0.313em; 
+				}
+}
+
+/* Breakpoints and media queries*/
+
+		@media only screen and (min-width: 768px) {
+			.container {
+			width: 750px;
+			}
+			html
+				{
+					font-size: 75%; 
+				}
+			h3{
+				float: left;
+			}
+
+			.slogan{
+				padding: 0;
+				float:none;
+			}
+
+			.homepagetext{
+				display: block;
+				float: none;
+			}
+
+
+				#nav
+				{
+					position: relative;
+					top: auto;
+					left: auto;
+			}
+				#nav > a
+				{
+					width: 3.125em; 
+					height: 3.125em; 
+					text-align: left;
+					text-indent: -9999px;
+					background-color: #05345e;
+					position: relative;
+				}
+					#nav > a:before,
+					#nav > a:after
+					{
+						position: absolute;
+						border: 2px solid #fff;
+						top: 35%;
+						left: 25%;
+						right: 25%;
+						content: '';
+					}
+					#nav > a:after
+					{
+						top: 60%;
+					}
+
+				#nav:not( :target ) > a:first-of-type,
+				#nav:target > a:last-of-type
+				{
+					display: block;
+				}
+			}
+
+			/* first level */
+
+			#nav > ul
+			{
+				height: auto;
+				display: none;
+				position: absolute;
+				left: 0;
+				right: 0;
+			}
+				#nav:target > ul
+				{
+					display: block;
+				}
+				#nav > ul > li
+				{
+					width: 100%;
+					float: none;
+				}
+					#nav > ul > li > a
+					{
+						height: auto;
+						text-align: left;
+						padding: 0 0.833em; /* 20 (24) */
+				}
+				#nav > ul > li:not( :last-child ) > a
+						{
+							border-right: none;
+							border-bottom: 1px solid #1f5d8e;
+						}
+
+
+				/* second level */
+
+				#nav li ul
+				{
+					position: static;
+					padding: 1.25em; /* 20 */
+					padding-top: 0;
+				}
+		}
+		@media only screen and (min-width: 992px) {
+			h3{
+				float: left;
+			}
+			.container {
+			width: 970px;
+			}
+
+			.slogan{
+					padding: 0;
+					float:none;
+				}
+				
+			}
+		
+		@media only screen and ( max-width: 62.5em )  {
+			.container {
+		width: 100%;
+		}
+		
+
+			#nav{
+				width: 100%;
+				position: static;
+				margin: 0;
+			}
+
+			.logo h2{
+				float: none;
+				padding: 0;
+			}
+			.logo img{
+			padding: 0;
+			margin:0;
+		}
+		}
+
+		
+		
